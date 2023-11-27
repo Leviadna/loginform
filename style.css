@@ -8,6 +8,8 @@ table{border-collapse:collapse;border-spacing:0}
 input:focus{outline:none}
 a{color:inherit;text-decoration:none}
 
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+
 .main-screen{position:relative;max-width:500px;margin:auto}
 .login-header{display:flex;padding:20px 15px;justify-content:center}
 .login-title{font-weight:bold;font-size:14px}
@@ -26,6 +28,7 @@ a{color:inherit;text-decoration:none}
 .login-box__auto{position:relative}
 .login-checkbox{position:absolute;left:4px;z-index:-1;width:15px;height:15px;margin:-1px;clip:rect(0,0,0,0);}
 .login-box__auto label::before{position:absolute;top:-2px;left:2px;width:15px;height:15px;border:1px solid #b1b1b1;background-color:#e1e1e1;border-radius:50%;content:''}
+.login-box__auto :checked+label:before{background-color:#0078ff}
 .login-box__auto label{padding-left:26px}
 .login-box__find{color:rgba(0,0,0,.3)}
 .login-box__find--link{position:relative;margin-left:10px}
