@@ -14,7 +14,7 @@ a{color:inherit;text-decoration:none}
 .login-header{display:flex;padding:20px 15px;justify-content:center}
 .login-title{font-weight:bold;font-size:14px}
 
-.login-screen{margin:0 15px}
+.login-screen{margin:0 15px;padding-bottom:100px}
 .login-form__select{display:flex;justify-content:space-around}
 .login-form__select--link{display:flex;width:50%;padding:15px 0;border-bottom:1px solid rgba(0,0,0,.3);color:rgba(0,0,0,.3);justify-content:center}
 .login-form__select--link[aria-selected="true"]{border-bottom:2px solid rgba(0,0,0,.9);font-weight:bold;color:rgba(0,0,0,.9)}
