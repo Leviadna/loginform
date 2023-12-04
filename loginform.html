@@ -7,21 +7,22 @@
   <title>로그인 | 무신사 스토어</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./icon.png"/>
 </head>
 <body>
   <div class="main-screen">
     <header class="login-header">
       <h2 class="login-title">로그인</h2>
     </header>
-    <main class="login-screen">
-      <div class="login-form__select">
+    <section class="login-screen">
+      <nav class="login-form__select">
         <a href="#none" class="login-form__select--link" aria-selected="true">
           <span class="login-form__select--user">가입 회원</span>
         </a>
         <a href="#none" class="login-form__select--link" aria-selected="false">
           <span class="login-form__select--notuser">비회원 주문 조회</span>
         </a>
-      </div>
+      </nav>
       <form action="https://www.musinsa.com/app/" class="login-form">
         <div class="login-input">
           <input type="text" name="id" placeholder="아이디">
@@ -38,24 +39,24 @@
             <label for="autologin">자동 로그인</label>
           </div>
           <div class="login-box__find">
-            <a href="#none" class="login-box__find--link">아이디 찾기</a>
-            <a href="#none" class="login-box__find--link">비밀번호 찾기</a>
+            <a href="https://www.musinsa.com/member/find/id?referer=https%3A%2F%2Fwww.musinsa.com%2Fmember%2Fmypage" class="login-box__find--link">아이디 찾기</a>
+            <a href="https://www.musinsa.com/member/find/password?referer=https%3A%2F%2Fwww.musinsa.com%2Fmember%2Fmypage" class="login-box__find--link">비밀번호 찾기</a>
           </div>
         </div>
       </form>
       <div class="login-button__another">
-        <a href="#none" class="login-button__another--kakao">카카오 로그인</a>
-        <a href="#none" class="login-button__another--apple">Apple 로그인</a>
+        <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fis_popup%3Dfalse%26ka%3Dsdk%252F1.43.1%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Fwww.musinsa.com%26auth_tran_id%3Dqh7m2n3wdida432f563a20ec43eb463878d3c627079lpqhgmhc%26response_type%3Dcode%26state%3D336c9b51bb48bb28309160b5812d9480ce55863c%26redirect_uri%3Dhttps%253A%252F%252Fwww.musinsa.com%252Fmember%252Fsns%252Flogin%252Fkakao%252Fcallback%26through_account%3Dtrue%26client_id%3Da432f563a20ec43eb463878d3c627079&talk_login=hidden#login" class="login-button__another--kakao">카카오 로그인</a>
+        <a href="https://appleid.apple.com/auth/authorize?client_id=com.musinsa.appleid&redirect_uri=https://www.musinsa.com/member/sns/login/apple/callback&scope=email&state=ea3c05b825a0addbcd3cec2b12ae2e3a6b6784ec&response_type=code%20id_token&response_mode=form_post" class="login-button__another--apple">Apple 로그인</a>
       </div>
       <div class="create-id">
-        <a href="#none" class="create-id__link">
-          <label for="create-btn"><span class="create-id__link--txt">가입 즉시 20% 할인 쿠폰 지급</span></label>
+        <span class="create-id__txt">가입 즉시 20% 할인 쿠폰 지급</span>
+        <a href="https://www.musinsa.com/member/join" class="create-id__link">
           <button type="button" id="create-btn" class="create-id__link--btn">회원가입</button>
         </a>
       </div>
-    </main>
+    </section>
     <span class="screen_out">뒤로가기</span>
-    <a href="#none" class="login-back">
+    <a href="https://www.musinsa.com/main/113" class="login-back">
       <i class="fa-solid fa-chevron-left fa-xl" style="color:#333"></i>
     </a>
   </div>
